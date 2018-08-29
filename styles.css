@@ -1,0 +1,32 @@
+html, body {
+    color: black;
+    background-color: white;
+    line-height: 1.4;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+::selection {
+    background: #587fbc;
+    color: white;
+}
+
+::-moz-selection {
+    background: #587fbc;
+    color: white;
+}
+
+#header {
+    text-align: center;
+}
+
+a {
+    color: #587fbc;
+}
+
+a:hover {
+    color: white;
+    background-color: #587fbc;
+    padding: 3px;
+    border-radius: 3px;
+}

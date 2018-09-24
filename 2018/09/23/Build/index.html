@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="">
+    <meta name="author" content="Ben">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <title>Beam.House</title>
+    <link href="https://bootswatch.com/4/sandstone/bootstrap.min.css" type="text/css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Beam.House</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav mr-auto">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/apps">Apps</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects">Projects</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About us</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            
+        </ul>
+    </div>
+</nav>
+    </div>
+    <div id="page-content">
+        <div class="jumbotron" id="post-top">
+    <h1>Building Instructions</h1>
+    <h4 class="text-muted">How to make changes to this site, and push to master</h4>
+    <p class="date">
+        2018-09-23
+        <button id="show-post-info-btn" class="btn btn-primary btn-md"  data-toggle="modal" data-target="#page-info-modal">Post details</button>
+    </p>
+</div>
+<h1 id="When-making-changes-be-sure-to-follow-these-guidelines"><a href="#When-making-changes-be-sure-to-follow-these-guidelines" class="headerlink" title="When making changes, be sure to follow these guidelines"></a>When making changes, be sure to follow these guidelines</h1><ul>
+<li>Apps go in /apps/</li>
+<li>Project links go in /apps/</li>
+<li>Properly date pages and posts for clarity</li>
+<li>Upload executables and the like to a CDN, don’t host them here</li>
+</ul>
+<h2 id="Clone"><a href="#Clone" class="headerlink" title="Clone"></a>Clone</h2><p>First you need to clone this site from Github into your working directory.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/beamhouse/beamhouse.github.io $working_directory$</span><br></pre></td></tr></table></figure>
+<h2 id="Make-your-changes"><a href="#Make-your-changes" class="headerlink" title="Make your changes"></a>Make your changes</h2><p>Preferably using an editor like <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code</a>, make your changes. Helpful resources for doing this include:</p>
+<ul>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank" rel="noopener">Markdown formatting</a></li>
+<li><a href="https://hexo.io/docs/index.html" target="_blank" rel="noopener">Hexo documentation</a></li>
+</ul>
+<h2 id="Push-changes-to-Github"><a href="#Push-changes-to-Github" class="headerlink" title="Push changes to Github"></a>Push changes to Github</h2><p>Commit changes:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;Explain your changes&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure></p>
+
+<div id="page-info">
+    <p id="tags"><span class="badge badge-secondary">Tags: </span>
+        
+        <a class="page-tag-link" href="/tags/build/">build</a>
+        
+    </p>
+    <p id="categories"><span class="badge badge-secondary">Categories: </span>
+        
+        <a class="page-category-link" href="/categories/blog/">blog</a>
+        
+    </p>
+</div>
+<div class="modal fade" id="page-info-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Post details</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="tags"><span class="page-info-badge badge badge-secondary">Tags:</span>
+                    
+                    <a class="page-tag-link" href="/tags/build/">build</a>
+                    
+                </p>
+                <p id="categories"><span class="page-info-badge badge badge-secondary">Categories:</span>
+                    
+                    <a class="page-category-link" href="/categories/blog/">blog</a>
+                    
+                </p>
+                <p><span class="page-info-badge badge badge-secondary">Date published:</span>2018-09-23</p>
+                <p><span class="page-info-badge badge badge-secondary">Permalink:</span><a href="https://beam.house/2018/09/23/Build/">https://beam.house/2018/09/23/Build/</a></p>
+                <p><b>Posted to Beam.House, by Ben</b></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
